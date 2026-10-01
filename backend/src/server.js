@@ -10,6 +10,8 @@ const errorHandler = require("./middleware/errorMiddleware");
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 connectDB();
 
 app.use(helmet());
