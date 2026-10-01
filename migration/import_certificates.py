@@ -8,7 +8,7 @@ import requests
 # Configuration
 # ==============================
 
-EXCEL_FILE = "trivandrum_certificate.xlsx"
+EXCEL_FILE = "Certificate Verification Data Trivandrum.xlsx"
 
 API_URL = os.getenv(
     "CERTIFICATE_API_URL",
