@@ -19,7 +19,10 @@ const getCertificate = async (req, res, next) => {
         const { certificateId } = req.params;
 
         const certificate = await Certificate.findOne({
-            certificateId,
+            certificateId: {
+                $regex: `^${certificateId.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`,
+                $options: "i",
+            },
         }).lean();
 
         if (!certificate) {
