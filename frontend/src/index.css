@@ -7,3 +7,171 @@ html {
 body {
   margin: 0;
 }
+
+
+.ocsp-issued-date {
+  top: 7.6%;
+  left: 75%;
+  font-size: clamp(9px, 1.1vw, 16px);
+}
+
+.ocsp-certificate-id {
+  top: 11.4%;
+  left: 83.3%;
+  font-size: clamp(9px, 1.1vw, 16px);
+}
+
+.student-name {
+  top: 52.5%;
+  width: 70%;
+  font-Size: clamp(18px, 2.2vw, 32px);
+}
+
+/* Mobile alignment for OCSP certificate */
+@media (max-width: 769px) {
+  .ocsp-issued-date {
+    top: 8.3%;
+    right: 60%;
+    width: 24%;
+    font-size: clamp(8px, 1.1vw, 10px);
+  }
+
+  .ocsp-certificate-id {
+    /* left: auto ; */
+    top: 11.9%;
+    right: 60%;
+    width: 30%;
+    /* text-align: right; */
+    font-size: clamp(8px, 1.1vw, 10px);
+  }
+
+  .student-name {
+    top: 52%;
+    font-Size: clamp(18px, 2.2vw, 32px);
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .ocsp-issued-date {
+    right: 60%;
+    width: 24%;
+    font-size: clamp(5px, 1.1vw, 10px);
+  }
+
+  .ocsp-certificate-id {
+    right: 60%;
+    width: 30%;
+    font-size: clamp(5px, 1.1vw, 10px);
+  }
+
+  .student-name {
+    top: 52%;
+    font-Size: clamp(16px, 2.2vw, 32px);
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1100px) {
+  .ocsp-issued-date {
+    top: 8.1%;
+    left: 75%;
+    font-size: clamp(13px, 1.1vw, 14px);
+  }
+
+  .ocsp-certificate-id {
+    top: 11.6%;
+    left: 83.3%;
+    font-size: clamp(13px, 1.1vw, 14px);
+  }
+
+  .student-name {
+    top: 52%;
+    font-size: clamp(18px, 2.2vw, 32px);
+    width: 70%;
+  }
+}
+
+
+
+.cjwh-issued-date {
+  top: 10.8%;
+  left: 75.9%;
+  font-size: clamp(10px, 1.1vw, 16px);
+}
+
+.cjwh-certificate-id {
+  top: 14.4%;
+  left: 84.1%;
+  font-size: clamp(10px, 1.1vw, 16px);
+}
+
+.student-name {
+  top: 52.5%;
+  width: 70%;
+  font-Size: clamp(18px, 2.2vw, 32px);
+}
+/* Mobile alignment for CJWH certificate */
+@media (max-width: 769px) {
+  .cjwh-issued-date {
+    top: 11.3%;
+    right: 60%;
+    width: 24%;
+    font-size: clamp(10px, 1.1vw, 10px);
+  }
+
+  .cjwh-certificate-id {
+    /* left: auto ; */
+    top: 14.9%;
+    right: 60%;
+    width: 30%;
+    /* text-align: right; */
+    font-size: clamp(10px, 1.1vw, 10px);
+  }
+
+  .student-name {
+    top: 52%;
+    font-Size: clamp(18px, 2.2vw, 32px);
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .cjwh-issued-date {
+    top: 11.4%;
+    right: 60%;
+    width: 24%;
+    font-size: clamp(5px, 1.1vw, 10px);
+  }
+
+  .cjwh-certificate-id {
+    top: 15.1%;
+    right: 60%;
+    width: 30%;
+    font-size: clamp(5px, 1.1vw, 10px);
+  }
+
+  .student-name {
+    top: 51%;
+    font-Size: clamp(16px, 2.2vw, 32px);
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1100px) {
+  .cjwh-issued-date {
+    top: 11.1%;
+    left: 76%;
+    font-size: clamp(13px, 1.1vw, 14px);
+  }
+
+  .cjwh-certificate-id {
+    top: 14.8%;
+    left: 84%;
+    font-size: clamp(13px, 1.1vw, 14px);
+  }
+
+  .student-name {
+    top: 52%;
+    font-size: clamp(18px, 2.2vw, 32px);
+    width: 70%;
+  }
+}

@@ -19,37 +19,19 @@ const ADISPreview = ({ certificate }) => {
 
             {/* Issued Date */}
             <div
-                className="absolute font-medium text-black"
-                style={{
-                    top: "7.7%",
-                    left: "75%",
-                    fontSize: "clamp(10px, 1.1vw, 16px)",
-                }}
-            >
+                className="ocsp-issued-date absolute font-medium text-black">
                 {formatDate(certificate.issuedDate)}
             </div>
 
             {/* Certificate ID */}
             <div
-                className="absolute font-medium text-black"
-                style={{
-                    top: "11.5%",
-                    left: "83.2%",
-                    fontSize: "clamp(10px, 1.1vw, 16px)",
-                }}
-            >
+                className="ocsp-certificate-id absolute font-medium text-black">
                 {certificate.certificateId}
             </div>
 
             {/* Student Name */}
             <div
-                className="absolute left-1/2 -translate-x-1/2 text-center font-semibold text-black"
-                style={{
-                    top: "52.5%",
-                    width: "70%",
-                    fontSize: "clamp(18px, 2.2vw, 32px)",
-                }}
-            >
+                className="student-name absolute left-1/2 -translate-x-1/2 text-center font-semibold text-black">
                 {certificate.studentName}
             </div>
         </div>
