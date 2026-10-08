@@ -18,10 +18,22 @@ const getCertificate = async (req, res, next) => {
     try {
         const { certificateId } = req.params;
 
+        const normalizedCertificateId = certificateId.replace(/\s+/g, "");
+
         const certificate = await Certificate.findOne({
-            certificateId: {
-                $regex: `^${certificateId.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`,
-                $options: "i",
+            $expr: {
+                $eq: [
+                    {
+                        $toLower: {
+                            $replaceAll: {
+                                input: "$certificateId",
+                                find: " ",
+                                replacement: "",
+                            },
+                        },
+                    },
+                    normalizedCertificateId.toLowerCase(),
+                ],
             },
         }).lean();
 
